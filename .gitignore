@@ -1,0 +1,13 @@
+#xcode noise
+build/*
+*.pbxuser
+*.mode1v3
+*.swp
+*~.nib
+
+#no svn
+.svn
+
+#osx noise
+.DS_Store
+profile
