@@ -20,11 +20,6 @@
 		C31CA5F01329C355006AF5B0 /* icon-72.png in Resources */ = {isa = PBXBuildFile; fileRef = C31CA5EB1329C355006AF5B0 /* icon-72.png */; };
 		C31CA5F11329C355006AF5B0 /* icon-114.png in Resources */ = {isa = PBXBuildFile; fileRef = C31CA5EC1329C355006AF5B0 /* icon-114.png */; };
 		C31CA5F21329C355006AF5B0 /* iTunesArtwork in Resources */ = {isa = PBXBuildFile; fileRef = C31CA5ED1329C355006AF5B0 /* iTunesArtwork */; };
-		C3516B4F132977D400106633 /* JJGWebView.m in Sources */ = {isa = PBXBuildFile; fileRef = C3516B4D132977D400106633 /* JJGWebView.m */; };
-		C3516B571329780200106633 /* back-arrow.png in Resources */ = {isa = PBXBuildFile; fileRef = C3516B531329780200106633 /* back-arrow.png */; };
-		C3516B581329780200106633 /* back-arrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C3516B541329780200106633 /* back-arrow@2x.png */; };
-		C3516B591329780200106633 /* forward-arrow.png in Resources */ = {isa = PBXBuildFile; fileRef = C3516B551329780200106633 /* forward-arrow.png */; };
-		C3516B5A1329780200106633 /* forward-arrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C3516B561329780200106633 /* forward-arrow@2x.png */; };
 		C3516C05132978A700106633 /* SHKCustomShareMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = C3516B6D132978A500106633 /* SHKCustomShareMenu.m */; };
 		C3516C06132978A700106633 /* SHKCustomShareMenuCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C3516B6F132978A600106633 /* SHKCustomShareMenuCell.m */; };
 		C3516C07132978A700106633 /* SHKCustomFormController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3516B72132978A600106633 /* SHKCustomFormController.m */; };
@@ -90,7 +85,12 @@
 		C3516C7613297C1400106633 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3516C7513297C1400106633 /* MessageUI.framework */; };
 		C3516C7813297C1400106633 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3516C7713297C1400106633 /* Security.framework */; };
 		C3516C7A13297C1400106633 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3516C7913297C1400106633 /* SystemConfiguration.framework */; };
-		C3516CEE1329864B00106633 /* JJGWebView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C3516CED1329864B00106633 /* JJGWebView.xib */; };
+		C357A98F1329C6B9008FB8E4 /* JJGWebView.m in Sources */ = {isa = PBXBuildFile; fileRef = C357A9881329C6B9008FB8E4 /* JJGWebView.m */; };
+		C357A9901329C6BA008FB8E4 /* back-arrow.png in Resources */ = {isa = PBXBuildFile; fileRef = C357A98A1329C6B9008FB8E4 /* back-arrow.png */; };
+		C357A9911329C6BA008FB8E4 /* back-arrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C357A98B1329C6B9008FB8E4 /* back-arrow@2x.png */; };
+		C357A9921329C6BA008FB8E4 /* forward-arrow.png in Resources */ = {isa = PBXBuildFile; fileRef = C357A98C1329C6B9008FB8E4 /* forward-arrow.png */; };
+		C357A9931329C6BA008FB8E4 /* forward-arrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C357A98D1329C6B9008FB8E4 /* forward-arrow@2x.png */; };
+		C357A9941329C6BA008FB8E4 /* JJGWebView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C357A98E1329C6B9008FB8E4 /* JJGWebView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -112,12 +112,6 @@
 		C31CA5EB1329C355006AF5B0 /* icon-72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-72.png"; sourceTree = "<group>"; };
 		C31CA5EC1329C355006AF5B0 /* icon-114.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-114.png"; sourceTree = "<group>"; };
 		C31CA5ED1329C355006AF5B0 /* iTunesArtwork */ = {isa = PBXFileReference; lastKnownFileType = file; path = iTunesArtwork; sourceTree = "<group>"; };
-		C3516B4C132977D400106633 /* JJGWebView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JJGWebView.h; sourceTree = "<group>"; };
-		C3516B4D132977D400106633 /* JJGWebView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JJGWebView.m; sourceTree = "<group>"; };
-		C3516B531329780200106633 /* back-arrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "back-arrow.png"; sourceTree = "<group>"; };
-		C3516B541329780200106633 /* back-arrow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "back-arrow@2x.png"; sourceTree = "<group>"; };
-		C3516B551329780200106633 /* forward-arrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "forward-arrow.png"; sourceTree = "<group>"; };
-		C3516B561329780200106633 /* forward-arrow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "forward-arrow@2x.png"; sourceTree = "<group>"; };
 		C3516B69132978A500106633 /* SHKConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHKConfig.h; sourceTree = "<group>"; };
 		C3516B6C132978A500106633 /* SHKCustomShareMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHKCustomShareMenu.h; sourceTree = "<group>"; };
 		C3516B6D132978A500106633 /* SHKCustomShareMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHKCustomShareMenu.m; sourceTree = "<group>"; };
@@ -247,7 +241,13 @@
 		C3516C7513297C1400106633 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
 		C3516C7713297C1400106633 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		C3516C7913297C1400106633 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
-		C3516CED1329864B00106633 /* JJGWebView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JJGWebView.xib; sourceTree = "<group>"; };
+		C357A9871329C6B9008FB8E4 /* JJGWebView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JJGWebView.h; sourceTree = "<group>"; };
+		C357A9881329C6B9008FB8E4 /* JJGWebView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JJGWebView.m; sourceTree = "<group>"; };
+		C357A98A1329C6B9008FB8E4 /* back-arrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "back-arrow.png"; sourceTree = "<group>"; };
+		C357A98B1329C6B9008FB8E4 /* back-arrow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "back-arrow@2x.png"; sourceTree = "<group>"; };
+		C357A98C1329C6B9008FB8E4 /* forward-arrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "forward-arrow.png"; sourceTree = "<group>"; };
+		C357A98D1329C6B9008FB8E4 /* forward-arrow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "forward-arrow@2x.png"; sourceTree = "<group>"; };
+		C357A98E1329C6B9008FB8E4 /* JJGWebView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JJGWebView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -289,8 +289,8 @@
 		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
 			isa = PBXGroup;
 			children = (
+				C357A9851329C6B9008FB8E4 /* JJGWebView */,
 				C3516B68132978A500106633 /* ShareKit */,
-				C3516B2D132976A100106633 /* JJGWebView */,
 				080E96DDFE201D6D7F000001 /* Classes */,
 				29B97315FDCFA39411CA2CEA /* Other Sources */,
 				29B97317FDCFA39411CA2CEA /* Resources */,
@@ -340,36 +340,6 @@
 				C31CA5ED1329C355006AF5B0 /* iTunesArtwork */,
 			);
 			name = Icon;
-			sourceTree = "<group>";
-		};
-		C3516B2D132976A100106633 /* JJGWebView */ = {
-			isa = PBXGroup;
-			children = (
-				C3516B51132977E000106633 /* Classes */,
-				C3516B52132977E700106633 /* Resources */,
-			);
-			name = JJGWebView;
-			sourceTree = "<group>";
-		};
-		C3516B51132977E000106633 /* Classes */ = {
-			isa = PBXGroup;
-			children = (
-				C3516B4C132977D400106633 /* JJGWebView.h */,
-				C3516B4D132977D400106633 /* JJGWebView.m */,
-			);
-			name = Classes;
-			sourceTree = "<group>";
-		};
-		C3516B52132977E700106633 /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				C3516CED1329864B00106633 /* JJGWebView.xib */,
-				C3516B531329780200106633 /* back-arrow.png */,
-				C3516B541329780200106633 /* back-arrow@2x.png */,
-				C3516B551329780200106633 /* forward-arrow.png */,
-				C3516B561329780200106633 /* forward-arrow@2x.png */,
-			);
-			name = Resources;
 			sourceTree = "<group>";
 		};
 		C3516B68132978A500106633 /* ShareKit */ = {
@@ -748,6 +718,36 @@
 			path = Reachability;
 			sourceTree = "<group>";
 		};
+		C357A9851329C6B9008FB8E4 /* JJGWebView */ = {
+			isa = PBXGroup;
+			children = (
+				C357A9861329C6B9008FB8E4 /* Classes */,
+				C357A9891329C6B9008FB8E4 /* Resources */,
+			);
+			path = JJGWebView;
+			sourceTree = "<group>";
+		};
+		C357A9861329C6B9008FB8E4 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				C357A9871329C6B9008FB8E4 /* JJGWebView.h */,
+				C357A9881329C6B9008FB8E4 /* JJGWebView.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		C357A9891329C6B9008FB8E4 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				C357A98A1329C6B9008FB8E4 /* back-arrow.png */,
+				C357A98B1329C6B9008FB8E4 /* back-arrow@2x.png */,
+				C357A98C1329C6B9008FB8E4 /* forward-arrow.png */,
+				C357A98D1329C6B9008FB8E4 /* forward-arrow@2x.png */,
+				C357A98E1329C6B9008FB8E4 /* JJGWebView.xib */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -799,18 +799,18 @@
 			files = (
 				28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */,
 				2899E5220DE3E06400AC0155 /* JJGWebViewViewController.xib in Resources */,
-				C3516B571329780200106633 /* back-arrow.png in Resources */,
-				C3516B581329780200106633 /* back-arrow@2x.png in Resources */,
-				C3516B591329780200106633 /* forward-arrow.png in Resources */,
-				C3516B5A1329780200106633 /* forward-arrow@2x.png in Resources */,
 				C3516C09132978A700106633 /* SHKSharers.plist in Resources */,
 				C3516C26132978A700106633 /* FBConnect.bundle in Resources */,
-				C3516CEE1329864B00106633 /* JJGWebView.xib in Resources */,
 				C31CA5EE1329C355006AF5B0 /* icon-29.png in Resources */,
 				C31CA5EF1329C355006AF5B0 /* icon-57.png in Resources */,
 				C31CA5F01329C355006AF5B0 /* icon-72.png in Resources */,
 				C31CA5F11329C355006AF5B0 /* icon-114.png in Resources */,
 				C31CA5F21329C355006AF5B0 /* iTunesArtwork in Resources */,
+				C357A9901329C6BA008FB8E4 /* back-arrow.png in Resources */,
+				C357A9911329C6BA008FB8E4 /* back-arrow@2x.png in Resources */,
+				C357A9921329C6BA008FB8E4 /* forward-arrow.png in Resources */,
+				C357A9931329C6BA008FB8E4 /* forward-arrow@2x.png in Resources */,
+				C357A9941329C6BA008FB8E4 /* JJGWebView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -824,7 +824,6 @@
 				1D60589B0D05DD56006BFB54 /* main.m in Sources */,
 				1D3623260D0F684500981E51 /* JJGWebViewAppDelegate.m in Sources */,
 				28D7ACF80DDB3853001CB0EB /* JJGWebViewViewController.m in Sources */,
-				C3516B4F132977D400106633 /* JJGWebView.m in Sources */,
 				C3516C05132978A700106633 /* SHKCustomShareMenu.m in Sources */,
 				C3516C06132978A700106633 /* SHKCustomShareMenuCell.m in Sources */,
 				C3516C07132978A700106633 /* SHKCustomFormController.m in Sources */,
@@ -885,6 +884,7 @@
 				C3516C40132978A700106633 /* SHKOAuthView.m in Sources */,
 				C3516C41132978A700106633 /* SHKViewControllerWrapper.m in Sources */,
 				C3516C42132978A700106633 /* Reachability.m in Sources */,
+				C357A98F1329C6B9008FB8E4 /* JJGWebView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
