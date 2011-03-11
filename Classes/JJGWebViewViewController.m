@@ -59,6 +59,11 @@
 	return 4;
 }
 
+// Customize section headers.
+- (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section {
+	return @"Tap a website to open:";
+}
+
 // Customize the appearance of table view cells.
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
 	
@@ -81,9 +86,9 @@
 	// Open link in Safari.
 	// [[UIApplication sharedApplication] openURL:[NSURL URLWithString:storyLink]];
 	
-	// Open link in JJGWebView,
+	// Open link in JJGWebView.
 	JJGWebView *jjgWebView = [[JJGWebView alloc] initWithNibName:@"JJGWebView" bundle:nil];
-	jjgWebView.title = [sampleArray objectAtIndex:indexPath.row];
+	jjgWebView.title = @"Loading...";
 	
 	switch (indexPath.row) {
 		case 0:

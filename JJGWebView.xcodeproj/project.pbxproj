@@ -15,6 +15,11 @@
 		2899E5220DE3E06400AC0155 /* JJGWebViewViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2899E5210DE3E06400AC0155 /* JJGWebViewViewController.xib */; };
 		28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28AD733E0D9D9553002E5188 /* MainWindow.xib */; };
 		28D7ACF80DDB3853001CB0EB /* JJGWebViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28D7ACF70DDB3853001CB0EB /* JJGWebViewViewController.m */; };
+		C31CA5EE1329C355006AF5B0 /* icon-29.png in Resources */ = {isa = PBXBuildFile; fileRef = C31CA5E91329C355006AF5B0 /* icon-29.png */; };
+		C31CA5EF1329C355006AF5B0 /* icon-57.png in Resources */ = {isa = PBXBuildFile; fileRef = C31CA5EA1329C355006AF5B0 /* icon-57.png */; };
+		C31CA5F01329C355006AF5B0 /* icon-72.png in Resources */ = {isa = PBXBuildFile; fileRef = C31CA5EB1329C355006AF5B0 /* icon-72.png */; };
+		C31CA5F11329C355006AF5B0 /* icon-114.png in Resources */ = {isa = PBXBuildFile; fileRef = C31CA5EC1329C355006AF5B0 /* icon-114.png */; };
+		C31CA5F21329C355006AF5B0 /* iTunesArtwork in Resources */ = {isa = PBXBuildFile; fileRef = C31CA5ED1329C355006AF5B0 /* iTunesArtwork */; };
 		C3516B4F132977D400106633 /* JJGWebView.m in Sources */ = {isa = PBXBuildFile; fileRef = C3516B4D132977D400106633 /* JJGWebView.m */; };
 		C3516B571329780200106633 /* back-arrow.png in Resources */ = {isa = PBXBuildFile; fileRef = C3516B531329780200106633 /* back-arrow.png */; };
 		C3516B581329780200106633 /* back-arrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C3516B541329780200106633 /* back-arrow@2x.png */; };
@@ -102,6 +107,11 @@
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		32CA4F630368D1EE00C91783 /* JJGWebView_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JJGWebView_Prefix.pch; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* JJGWebView-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "JJGWebView-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
+		C31CA5E91329C355006AF5B0 /* icon-29.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-29.png"; sourceTree = "<group>"; };
+		C31CA5EA1329C355006AF5B0 /* icon-57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-57.png"; sourceTree = "<group>"; };
+		C31CA5EB1329C355006AF5B0 /* icon-72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-72.png"; sourceTree = "<group>"; };
+		C31CA5EC1329C355006AF5B0 /* icon-114.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-114.png"; sourceTree = "<group>"; };
+		C31CA5ED1329C355006AF5B0 /* iTunesArtwork */ = {isa = PBXFileReference; lastKnownFileType = file; path = iTunesArtwork; sourceTree = "<group>"; };
 		C3516B4C132977D400106633 /* JJGWebView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JJGWebView.h; sourceTree = "<group>"; };
 		C3516B4D132977D400106633 /* JJGWebView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JJGWebView.m; sourceTree = "<group>"; };
 		C3516B531329780200106633 /* back-arrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "back-arrow.png"; sourceTree = "<group>"; };
@@ -302,6 +312,7 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				C31CA5E71329C34B006AF5B0 /* Icon */,
 				2899E5210DE3E06400AC0155 /* JJGWebViewViewController.xib */,
 				28AD733E0D9D9553002E5188 /* MainWindow.xib */,
 				8D1107310486CEB800E47090 /* JJGWebView-Info.plist */,
@@ -317,6 +328,18 @@
 				288765A40DF7441C002DB57D /* CoreGraphics.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C31CA5E71329C34B006AF5B0 /* Icon */ = {
+			isa = PBXGroup;
+			children = (
+				C31CA5E91329C355006AF5B0 /* icon-29.png */,
+				C31CA5EA1329C355006AF5B0 /* icon-57.png */,
+				C31CA5EB1329C355006AF5B0 /* icon-72.png */,
+				C31CA5EC1329C355006AF5B0 /* icon-114.png */,
+				C31CA5ED1329C355006AF5B0 /* iTunesArtwork */,
+			);
+			name = Icon;
 			sourceTree = "<group>";
 		};
 		C3516B2D132976A100106633 /* JJGWebView */ = {
@@ -783,6 +806,11 @@
 				C3516C09132978A700106633 /* SHKSharers.plist in Resources */,
 				C3516C26132978A700106633 /* FBConnect.bundle in Resources */,
 				C3516CEE1329864B00106633 /* JJGWebView.xib in Resources */,
+				C31CA5EE1329C355006AF5B0 /* icon-29.png in Resources */,
+				C31CA5EF1329C355006AF5B0 /* icon-57.png in Resources */,
+				C31CA5F01329C355006AF5B0 /* icon-72.png in Resources */,
+				C31CA5F11329C355006AF5B0 /* icon-114.png in Resources */,
+				C31CA5F21329C355006AF5B0 /* iTunesArtwork in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
