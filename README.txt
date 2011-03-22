@@ -2,9 +2,9 @@
 
 Info: http://www.midwesternmac.com/jjgwebview
 
-This is an iPhone and iPod Touch-based UIWebView implementation for reuse in
+This is an iPhone, iPod Touch, and iPad UIWebView implementation for reuse in
 iOS Apps, highlighting methods and design for a usable and intuitive in-app
-browser. At some point, I'll get this working with the iPad as well.
+browser.
 
 - USAGE -
 
