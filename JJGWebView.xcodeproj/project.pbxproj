@@ -15,6 +15,7 @@
 		2899E5220DE3E06400AC0155 /* JJGWebViewViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2899E5210DE3E06400AC0155 /* JJGWebViewViewController.xib */; };
 		28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28AD733E0D9D9553002E5188 /* MainWindow.xib */; };
 		28D7ACF80DDB3853001CB0EB /* JJGWebViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28D7ACF70DDB3853001CB0EB /* JJGWebViewViewController.m */; };
+		B009556E133953EF00038801 /* MainWindow-iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = B009556D133953EF00038801 /* MainWindow-iPad.xib */; };
 		C31CA5EE1329C355006AF5B0 /* icon-29.png in Resources */ = {isa = PBXBuildFile; fileRef = C31CA5E91329C355006AF5B0 /* icon-29.png */; };
 		C31CA5EF1329C355006AF5B0 /* icon-57.png in Resources */ = {isa = PBXBuildFile; fileRef = C31CA5EA1329C355006AF5B0 /* icon-57.png */; };
 		C31CA5F01329C355006AF5B0 /* icon-72.png in Resources */ = {isa = PBXBuildFile; fileRef = C31CA5EB1329C355006AF5B0 /* icon-72.png */; };
@@ -107,6 +108,7 @@
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		32CA4F630368D1EE00C91783 /* JJGWebView_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JJGWebView_Prefix.pch; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* JJGWebView-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "JJGWebView-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
+		B009556D133953EF00038801 /* MainWindow-iPad.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = "MainWindow-iPad.xib"; path = "Resources-iPad/MainWindow-iPad.xib"; sourceTree = "<group>"; };
 		C31CA5E91329C355006AF5B0 /* icon-29.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-29.png"; sourceTree = "<group>"; };
 		C31CA5EA1329C355006AF5B0 /* icon-57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-57.png"; sourceTree = "<group>"; };
 		C31CA5EB1329C355006AF5B0 /* icon-72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-72.png"; sourceTree = "<group>"; };
@@ -294,6 +296,7 @@
 				080E96DDFE201D6D7F000001 /* Classes */,
 				29B97315FDCFA39411CA2CEA /* Other Sources */,
 				29B97317FDCFA39411CA2CEA /* Resources */,
+				B009556C133953EE00038801 /* Resources-iPad */,
 				29B97323FDCFA39411CA2CEA /* Frameworks */,
 				19C28FACFE9D520D11CA2CBB /* Products */,
 			);
@@ -328,6 +331,14 @@
 				288765A40DF7441C002DB57D /* CoreGraphics.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B009556C133953EE00038801 /* Resources-iPad */ = {
+			isa = PBXGroup;
+			children = (
+				B009556D133953EF00038801 /* MainWindow-iPad.xib */,
+			);
+			name = "Resources-iPad";
 			sourceTree = "<group>";
 		};
 		C31CA5E71329C34B006AF5B0 /* Icon */ = {
@@ -811,6 +822,7 @@
 				C357A9921329C6BA008FB8E4 /* forward-arrow.png in Resources */,
 				C357A9931329C6BA008FB8E4 /* forward-arrow@2x.png in Resources */,
 				C357A9941329C6BA008FB8E4 /* JJGWebView.xib in Resources */,
+				B009556E133953EF00038801 /* MainWindow-iPad.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -895,6 +907,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -902,6 +915,8 @@
 				GCC_PREFIX_HEADER = JJGWebView_Prefix.pch;
 				INFOPLIST_FILE = "JJGWebView-Info.plist";
 				PRODUCT_NAME = JJGWebView;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -909,11 +924,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				COPY_PHASE_STRIP = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = JJGWebView_Prefix.pch;
 				INFOPLIST_FILE = "JJGWebView-Info.plist";
 				PRODUCT_NAME = JJGWebView;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -926,8 +944,10 @@
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 3.2;
 				PREBINDING = NO;
 				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};

@@ -93,8 +93,15 @@
 	// Get the ShareKit action sheet
 	SHKActionSheet *actionSheet = [SHKActionSheet actionSheetForItem:item];
 	
-	// Display the action sheet over the entire window - otherwise cancel button is jinxed.
-	[actionSheet showInView:self.navigationController.view];
+	// Check if we're using an iPad or iPhone
+	if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad) {
+		// For iPad: Display the action sheet over the bar button item.
+		// @todo - If a user repeatedly taps the action button, multiple popups appear, overlaying one another.
+		[actionSheet showFromBarButtonItem:actionButton animated:NO];
+	} else {
+		// For iPhone/iPod Touch: Display the action sheet over the entire window - otherwise cancel button is jinxed.
+		[actionSheet showInView:self.navigationController.view];
+	}
 
 }
 
