@@ -34,6 +34,11 @@
 	[webView loadRequest:requestObj];
 }
 
+- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation {
+	// We allow rotation.
+    return YES;
+}
+
 
 #pragma mark Web View methods
 
@@ -84,6 +89,8 @@
 #pragma mark IBAction outlets
 
 - (IBAction)actionButtonSelected:(id)sender {
+	
+	// @todo - first, check to make sure we don't already have an SHKItem instantiated...
 	
 	// Create the item to share (url from webView)
 	NSURL *url = [[webView request] URL];
