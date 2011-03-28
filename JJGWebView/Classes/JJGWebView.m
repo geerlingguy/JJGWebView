@@ -27,11 +27,14 @@
 	//	NSURL *url = [NSURL URLWithString:urlAddress];
 	//	NSURLRequest *requestObj = [NSURLRequest requestWithURL:url];
 	
-	// webViewURL gets passed in from other views - form URL request with it
-	NSURLRequest *requestObj = [NSURLRequest requestWithURL:webViewURL];
-
-	// Load URL in UIWebView
-	[webView loadRequest:requestObj];
+	if (webViewURL != nil) {
+		// webViewURL gets passed in from other views - form URL request with it
+		NSURLRequest *requestObj = [NSURLRequest requestWithURL:webViewURL];
+		// Load URL in UIWebView
+		[webView loadRequest:requestObj];
+	} else {
+		NSLog(@"What to do? We don't have a URL...");
+	}
 }
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation {
