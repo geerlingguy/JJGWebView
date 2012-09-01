@@ -79,7 +79,6 @@
                                                    cancelButtonTitle:@"OK"
                                                    otherButtonTitles:nil];
         [errorAlert show];
-        [errorAlert release];
     }
 }
 
@@ -121,7 +120,6 @@
             [picker setSubject:@"Emailed Link"];
             [picker setMessageBody:[NSString stringWithFormat:@"<br /><br /><a href=\"%@\">%@</a>", url, currentTitle] isHTML:YES];
             [self presentModalViewController:picker animated:YES];
-            [picker release];
             break;
         }
         case 1: { // Open URL in browser.
@@ -142,7 +140,6 @@
                                            cancelButtonTitle:@"OK"
                                            otherButtonTitles:nil];
                 [errorAlert show];
-                [errorAlert release];
             }
             break;
         }
@@ -173,14 +170,6 @@
     [super viewDidUnload];
     // Release any retained subviews of the main view.
     // e.g. self.myOutlet = nil;
-}
-
-
-- (void)dealloc {
-	[webView release];
-	[webViewURL release];
-	[actionButton release];
-    [super dealloc];
 }
 
 @end

@@ -46,7 +46,7 @@
 
 	UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
 	if (cell == nil) {
-		cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier] autorelease];
+		cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
 	}
 
 	cell.textLabel.text = [sampleArray objectAtIndex:indexPath.row];
@@ -85,7 +85,6 @@
 
 	// Push to the web view.
 	[self.navigationController pushViewController:jjgWebView animated:YES];
-	[jjgWebView release];
 }
 
 #pragma mark Memory cleanup
@@ -98,10 +97,6 @@
 - (void)viewDidUnload {
 	// Release any retained subviews of the main view.
 	// e.g. self.myOutlet = nil;
-}
-
-- (void)dealloc {
-    [super dealloc];
 }
 
 @end

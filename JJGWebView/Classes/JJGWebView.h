@@ -26,13 +26,13 @@
 
 }
 
-@property (nonatomic,retain) UIToolbar *webViewToolbar;
-@property (nonatomic,retain) UIWebView *webView;
-@property (nonatomic,retain) NSURL *webViewURL;
-@property (nonatomic,retain) UIBarButtonItem *actionButton;
-@property (nonatomic,retain) UIBarButtonItem *refreshButton;
-@property (nonatomic,retain) UIBarButtonItem *backButton;
-@property (nonatomic,retain) UIBarButtonItem *forwardButton;
+@property (nonatomic,strong) UIToolbar *webViewToolbar;
+@property (nonatomic,strong) UIWebView *webView;
+@property (nonatomic,strong) NSURL *webViewURL;
+@property (nonatomic,strong) UIBarButtonItem *actionButton;
+@property (nonatomic,strong) UIBarButtonItem *refreshButton;
+@property (nonatomic,strong) UIBarButtonItem *backButton;
+@property (nonatomic,strong) UIBarButtonItem *forwardButton;
 
 - (IBAction)actionButtonSelected:(id)sender;
 
