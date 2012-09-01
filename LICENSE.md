@@ -1,4 +1,4 @@
---- LICENSE for JJGWebView ---
+# LICENSE
 
 Copyright (c) 2011 Midwestern Mac, LLC and Jeffrey Geerling
 
@@ -20,7 +20,7 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
-------------------------------
+-----
 
 Adapted from OSI MIT License Template:
 http://www.opensource.org/licenses/mit-license.php
