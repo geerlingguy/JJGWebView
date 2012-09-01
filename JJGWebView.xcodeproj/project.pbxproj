@@ -106,7 +106,6 @@
 		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
 			isa = PBXGroup;
 			children = (
-				B0CA72A815F282550095A8C3 /* Twitter.framework */,
 				C357A9851329C6B9008FB8E4 /* JJGWebView */,
 				080E96DDFE201D6D7F000001 /* Classes */,
 				29B97315FDCFA39411CA2CEA /* Other Sources */,
@@ -144,6 +143,7 @@
 				1DF5F4DF0D08C38300B7A737 /* UIKit.framework */,
 				1D30AB110D05D00D00671497 /* Foundation.framework */,
 				288765A40DF7441C002DB57D /* CoreGraphics.framework */,
+				B0CA72A815F282550095A8C3 /* Twitter.framework */,
 				C3516C7513297C1400106633 /* MessageUI.framework */,
 				C3516C7713297C1400106633 /* Security.framework */,
 				C3516C7913297C1400106633 /* SystemConfiguration.framework */,

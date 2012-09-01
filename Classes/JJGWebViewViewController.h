@@ -3,7 +3,7 @@
 //  JJGWebView
 //
 //  Created by Jeff Geerling on 3/10/11.
-//  Copyright 2011 Archdiocese of Saint Louis. All rights reserved.
+//  Copyright 2011 Midwestern Mac, LLC. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
