@@ -1,6 +1,6 @@
 # JJGWebView
 
-<p style="text-align: center;">![JJGWebView Example on iPhone](https://github.com/geerlingguy/JJGWebView/raw/master/jjgwebview-example-resized.png)</p>
+![JJGWebView Example on iPhone](https://github.com/geerlingguy/JJGWebView/raw/master/jjgwebview-example-resized.png)
 
 This is an iPhone, iPod Touch, and iPad UIWebView implementation for reuse in
 iOS Apps, highlighting methods and design for a usable and intuitive in-app
@@ -13,7 +13,7 @@ if you're using a Table View inside a Navigation Controller, you can just
 pop a JJGWebView on your navigation stack, and the class will take care of the
 rest.
 
-    // Import JJGWebView.h at the top of your class.
+    // Import JJGWebView.h (at the top of your class).
     #import "JJGWebView.h"
 
     // Open a link in JJGWebView.
