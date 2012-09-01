@@ -1,6 +1,6 @@
 # JJGWebView
 
-<p style="text-align: center;">![JJGWebView Example on iPhone](https://github.com/geerlingguy/JJGWebView/blob/master/jjgwebview-example-resized.png)</p>
+<p style="text-align: center;">![JJGWebView Example on iPhone](https://github.com/geerlingguy/JJGWebView/raw/master/jjgwebview-example-resized.png)</p>
 
 This is an iPhone, iPod Touch, and iPad UIWebView implementation for reuse in
 iOS Apps, highlighting methods and design for a usable and intuitive in-app
