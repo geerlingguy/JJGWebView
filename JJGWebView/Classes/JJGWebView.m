@@ -6,7 +6,6 @@
 //
 
 #import "JJGWebView.h"
-#import "SHK.h"
 
 
 @implementation JJGWebView
@@ -92,27 +91,82 @@
 #pragma mark IBAction outlets
 
 - (IBAction)actionButtonSelected:(id)sender {
-	
-	// @todo - first, check to make sure we don't already have an SHKItem instantiated...
-	
-	// Create the item to share (url from webView)
-	NSURL *url = [[webView request] URL];
-	NSString *currentTitle = [webView stringByEvaluatingJavaScriptFromString:@"document.title"];
-	SHKItem *item = [SHKItem URL:url title:currentTitle];
-	
-	// Get the ShareKit action sheet
-	SHKActionSheet *actionSheet = [SHKActionSheet actionSheetForItem:item];
-	
-	// Check if we're using an iPad or iPhone
-	if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad) {
-		// For iPad: Display the action sheet over the bar button item.
-		// @todo - If a user repeatedly taps the action button, multiple popups appear, overlaying one another.
-		[actionSheet showFromBarButtonItem:actionButton animated:NO];
-	} else {
-		// For iPhone/iPod Touch: Display the action sheet over the entire window - otherwise cancel button is jinxed.
-		[actionSheet showInView:self.navigationController.view];
-	}
+    if (actionButtonActionSheet != nil) {
+        return;
+    }
 
+    // Get the url and title from webView.
+    NSURL *url = [[webView request] URL];
+
+    // Create an action sheet.
+    actionButtonActionSheet = [[UIActionSheet alloc] initWithTitle:[url absoluteString]
+                                                          delegate:self
+                                                 cancelButtonTitle:@"Cancel"
+                                            destructiveButtonTitle:nil
+                                                 otherButtonTitles:@"Email Link", @"Open in Browser", @"Post to Twitter", nil];
+
+    // Check if we're using an iPad or iPhone
+    if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad) {
+        // For iPad: Display the action sheet over the bar button item.
+        // @todo - If a user repeatedly taps the action button, multiple popups appear, overlaying one another.
+        [actionButtonActionSheet showFromBarButtonItem:actionButton animated:NO];
+    } else {
+        // For iPhone/iPod Touch: Display the action sheet over the entire window - otherwise cancel button is jinxed.
+        [actionButtonActionSheet showInView:self.navigationController.view];
+    }
+}
+
+-(void)actionSheet:(UIActionSheet *)actionSheet clickedButtonAtIndex:(NSInteger)buttonIndex {
+    NSURL *url = [[webView request] URL];
+    NSString *currentTitle = [webView stringByEvaluatingJavaScriptFromString:@"document.title"];
+
+    switch (buttonIndex) {
+        case 0: { // Email URL.
+            MFMailComposeViewController *picker = [[MFMailComposeViewController alloc] init];
+            picker.mailComposeDelegate = self;
+            [picker setSubject:@"Emailed Link"];
+            [picker setMessageBody:[NSString stringWithFormat:@"<a href=\"%@\">%@</a>", url, currentTitle] isHTML:YES];
+            [self presentModalViewController:picker animated:YES];
+            [picker release];
+            break;
+        }
+        case 1: { // Open URL in browser.
+            [[UIApplication sharedApplication] openURL:url];
+            break;
+        }
+        case 2: { // Share link on Twitter.
+            if ([TWTweetComposeViewController canSendTweet]) {
+                TWTweetComposeViewController *tweetSheet = [[TWTweetComposeViewController alloc] init];
+                [tweetSheet setInitialText:currentTitle];
+                [self presentModalViewController:tweetSheet animated:YES];
+            }
+            else {
+                UIAlertView *errorAlert = [[UIAlertView alloc]
+                                           initWithTitle:@"Can't Send Tweet"
+                                           message:@"Please make sure your Twitter account are configured correctly in your device settings."
+                                           delegate:nil
+                                           cancelButtonTitle:@"OK"
+                                           otherButtonTitles:nil];
+                [errorAlert show];
+                [errorAlert release];
+            }
+            break;
+        }
+        default:
+            break;
+        }
+
+    // Reset action button sheet.
+    actionButtonActionSheet = nil;
+}
+
+
+#pragma mark MFMailComposeViewController delegate methods
+
+-(void)mailComposeController:(MFMailComposeViewController *)controller
+         didFinishWithResult:(MFMailComposeResult)result
+                       error:(NSError *)error {
+    [self dismissModalViewControllerAnimated:YES];
 }
 
 

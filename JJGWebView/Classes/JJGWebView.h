@@ -6,9 +6,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <MessageUI/MessageUI.h>
+#import <MessageUI/MFMailComposeViewController.h>
+#import <Twitter/Twitter.h>
+#import <Twitter/TWTweetComposeViewController.h>
 
-@interface JJGWebView : UIViewController <UITextFieldDelegate, UIWebViewDelegate, UIActionSheetDelegate> {
-	
+@interface JJGWebView : UIViewController <UITextFieldDelegate, UIWebViewDelegate, UIActionSheetDelegate, MFMailComposeViewControllerDelegate> {
+
 	IBOutlet UIToolbar *webViewToolbar;
 	IBOutlet UIWebView *webView;
 	IBOutlet UIActivityIndicatorView *activityIndicator;
@@ -19,7 +23,7 @@
 
 	UIActionSheet *actionButtonActionSheet;
 	NSURL *webViewURL;
-	
+
 }
 
 @property (nonatomic,retain) UIToolbar *webViewToolbar;

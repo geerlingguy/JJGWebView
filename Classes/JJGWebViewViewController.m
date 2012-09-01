@@ -68,7 +68,7 @@ return YES;
 	
 	UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
 	if (cell == nil) {
-		cell = [[[UITableViewCell alloc] initWithFrame:CGRectZero reuseIdentifier:CellIdentifier] autorelease];
+		cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier] autorelease];
 	}
 	
 	cell.textLabel.text = [sampleArray objectAtIndex:indexPath.row];
@@ -89,7 +89,7 @@ return YES;
 	
 	switch (indexPath.row) {
 		case 0:
-			jjgWebView.webViewURL = [NSURL URLWithString:@"http://www.midwesternmac.com/"];
+			jjgWebView.webViewURL = [NSURL URLWithString:@"http://local.opensourcecatholic.com/about-osc"];
 			break;
 		case 1:
 			jjgWebView.webViewURL = [NSURL URLWithString:@"http://www.lifeisaprayer.com/"];
@@ -124,7 +124,6 @@ return YES;
 	// Release any retained subviews of the main view.
 	// e.g. self.myOutlet = nil;
 }
-
 
 - (void)dealloc {
     [super dealloc];
